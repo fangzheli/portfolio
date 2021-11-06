@@ -1,0 +1,115 @@
+body{
+    font-family: 'Times New Roman', serif;
+    /* background-image: url("../images/concrete_seamless.png"); */
+    /* background-image: url("../images/soccer_background.jpg"); */
+    background-color: white;
+}
+
+
+nav ul li{
+    width: 23%;
+    display: inline-block;
+    padding:10px;
+    justify-content: space-between;
+    border: black 2px solid;
+    text-align: center;
+}
+
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+}
+
+footer {
+    background-color: rgb(74, 175, 206);
+    color: black;
+    padding: 30px;
+    text-align: center;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: white;
+}
+
+
+.container{
+    border: 4px solid black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 400px);
+    margin: auto;
+    width: 90vw;
+}
+
+.container > div{
+    overflow: hidden;
+} 
+
+.container > div > img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* object-fit: cover; */
+} 
+
+.report{
+    border:3px black solid;
+}
+
+h1{
+    font-size:32px;
+    text-align: center;
+    line-height:2;
+}
+
+h2{
+    font-size: 24px;
+    line-height:1.5;
+}
+
+h3{
+    font-size: 18px;
+    line-height:1.2;
+}
+
+.report img{
+    width: 100%;
+    height: 100%;
+}
+
+table{
+    width:100%;
+    border: 5px solid #000000;
+    border-radius: 7px;
+}
+
+.rowhead{
+    border-top:2px solid #000000;
+    border-right:2px solid #000000;
+    padding: 10px;
+  }
+
+td{
+    text-align: center;
+    padding: 10px;
+    border-top:2px solid #000000;
+}
+
+th{
+    text-align: center;
+}
+
+nav .current:before{
+    content: "⚽";
+}
+
+a{
+    color: black;
+}
+
