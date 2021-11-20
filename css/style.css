@@ -1,15 +1,93 @@
 body{
-    font-family: 'Times New Roman', serif;
+
     /* background-image: url("../images/concrete_seamless.png"); */
     /* background-image: url("../images/soccer_background.jpg"); */
     background-color: white;
 }
 
+p {
+    color:  #050065;
+    font-family: 'Arial', serif;
+    font-size: 16px;
+    line-height: 26px;
+    /*  16/0.618 = 25.88 */
+}
+
+.skip{
+    background: #e77e23;
+    height:30px;
+    transition: transform 0.3s;
+    left:50%;
+    position:absolute;
+    transform: translateY(-100%);
+}
+
+.skip:focus{
+    transform: translateY(0%);
+}
+
+#grey_image{
+    background-image:radial-gradient(at right top,rgba(0,0,0,0) 40%,#000000f5 100%);
+    background-color: #0a3a0a6b;
+}
+
+.simple-form p{
+    text-align: center;
+}
+
+.simple-form{
+    background-image: url("../images/soccer_on_the_ground_background.jpg");
+    min-height: 600px;
+    background-position: center bottom;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.landing{
+    font-size: 50px;
+    line-height: 81px;
+    color: yellow;
+}
+
+#text_landing{
+    /* padding-top: 4%; */
+    padding-bottom: 25%;
+}
+
+#learn_more{
+    font-family: 'DINPro',Montserrat;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #81cdf0;
+    float: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    text-decoration: none;
+    border-style: none;
+    border-radius: 100px;
+    text-shadow: none;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgb(7, 7, 6);
+    padding: 10px 30px;
+    text-align: center;
+    white-space: normal;
+    width: auto;
+    font-style: normal;
+    max-width: 300px;
+    margin: 50px auto 30px auto;
+    display: block;
+}
+
+main{
+    margin: 0 10%;
+}
 
 nav ul li{
-    width: 23%;
+    width: 24%;
     display: inline-block;
-    padding:10px;
+    padding:2px;
     justify-content: space-between;
     border: black 2px solid;
     text-align: center;
@@ -22,7 +100,7 @@ h1{
 
 footer {
     background-color: rgb(74, 175, 206);
-    color: black;
+    color: #050065;
     padding: 30px;
     text-align: center;
 }
@@ -31,6 +109,7 @@ body{
     margin:0;
     padding:0;
     background-color: white;
+    color:#050065;
 }
 
 
@@ -43,7 +122,6 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, 400px);
     margin: auto;
-    width: 90vw;
 }
 
 .container > div{
@@ -109,8 +187,22 @@ nav .current:before{
     content: "⚽";
 }
 
+nav .current_list{
+    /* background-color: #49721D; */
+    background-color: rgb(74, 175, 206);
+}
+
 a{
     color: black;
     font-size: 10px;
+}
+
+@media (min-width: 600px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 200px);
+        margin: auto;
+    }
 }
 
