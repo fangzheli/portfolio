@@ -85,12 +85,20 @@ main{
 }
 
 nav ul li{
-    width: 24%;
+    width: 100%;
     display: inline-block;
     padding:2px;
     justify-content: space-between;
     border: black 2px solid;
     text-align: center;
+}
+
+.nav_links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1{
@@ -203,6 +211,18 @@ a{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(5, 200px);
         margin: auto;
+    }
+
+    .nav_links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    nav ul li{
+        width: 25%;
     }
 }
 
