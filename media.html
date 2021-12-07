@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="dist/css/lightbox.min.css">
         <link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/>
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap" rel="stylesheet">
         <title>More Media</title>
@@ -24,18 +25,23 @@
         </header>
     <main>
     <div class="container" id="skip">
-    <div class="img-one"><img src="images/hope_cup_2020_math_team_photo.jpg" alt="team photo after with math"/></div>
+    <!-- <div class="img-one"><img src="images/hope_cup_2020_math_team_photo.jpg" alt="team photo after with math"/></div> -->
+    <div class="img-one"><a class="example-image-link" href="images/hope_cup_2020_math_team_photo.jpg" data-lightbox="example-1"><img class="example-image" src="images/hope_cup_2020_math_team_photo.jpg" alt="team photo after with math" /></a></div>
 
-    <div class="img-two"><img src="images/newcomer_cup_consolation_game3.jpeg" alt="team ptoto before consolation" /></div>
-
-    <div class="img-three"><img src="images/newcomer_cup_group_stage_design_agriculture2.jpg" alt="opponent's free kick" /></div>
-
-    <div class="img-four"><img src="images/newcomer_cup_group_stage_medical2.gif" alt="Hoon's long shot" /></div>
-
-    <div class="img-five"><img src="images/newcomer_cup_quarterfinal_goal3.gif" alt="Yuhong's goal" /></div>
-
-    <div class="img-six"><img src="images/newcomer_cup_semifinal4.gif" alt="JI's attack"/></div>
-
+    <!-- <div class="img-two"><img src="images/newcomer_cup_consolation_game3.jpeg" alt="team ptoto before consolation" /></div> -->
+    <div class="img-two"><a class="example-image-link" href="images/newcomer_cup_consolation_game3.jpeg" data-lightbox="example-1"><img class="example-image" src="images/newcomer_cup_consolation_game3.jpeg" alt="team ptoto before consolation" /></a></div>
+    <!-- <div class="img-three"><img src="images/newcomer_cup_group_stage_design_agriculture2.jpg" alt="opponent's free kick" /></div> -->
+    <div class="img-three"><a class="example-image-link" href="images/newcomer_cup_group_stage_design_agriculture2.jpg" data-lightbox="example-1"><img class="example-image" src="images/newcomer_cup_group_stage_design_agriculture2.jpg" alt="opponent's free kick" /></a></div>
+   
+    <!-- <div class="img-four"><img src="images/newcomer_cup_group_stage_medical2.gif" alt="Hoon's long shot" /></div> -->
+    <div class="img-four"><a class="example-image-link" href="images/newcomer_cup_group_stage_medical2.gif" data-lightbox="example-1"><img class="example-image" src="images/newcomer_cup_group_stage_medical2.gif" alt="Hoon's long shot" /></a></div>
+   
+    <!-- <div class="img-five"><img src="images/newcomer_cup_quarterfinal_goal3.gif" alt="Yuhong's goal" /></div> -->
+    <div class="img-five"><a class="example-image-link" href="images/newcomer_cup_quarterfinal_goal3.gif" data-lightbox="example-1"><img class="example-image" src="images/newcomer_cup_quarterfinal_goal3.gif" alt="Yuhong's goal" /></a></div>
+   
+    <!-- <div class="img-six"><img src="images/newcomer_cup_semifinal4.gif" alt="JI's attack"/></div> -->
+    <div class="img-six"><a class="example-image-link" href="images/newcomer_cup_semifinal4.gif" data-lightbox="example-1"><img class="example-image" src="images/newcomer_cup_semifinal4.gif" alt="JI's attack" /></a></div>
+   
     <div class="img-seven"><video width=100% height=100% controls>
         <source src="images/newcomer_cup_nice_pass.mp4" type="video/mp4">
         <track label="English" kind="captions" srclang="en" src="images/newcomer_cup_nice_pass.vtt" default>
@@ -60,5 +66,6 @@
       <p>University of Michigan School of Information <br/>
         &copy; Fangzhe Li - SI539 Web Design 2021</p>
     </footer>
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
   </body>
 </html>
