@@ -250,6 +250,9 @@ a{
     font-size: 10px;
 }
 
+#contact{
+    margin-left: 20px;
+}
 
 
 @media (min-width: 600px){
@@ -294,6 +297,10 @@ a{
         width: 450px;
         height: 350px;
         /* border: hidden; */
+    }
+
+    .team_photo > img{
+        height: 100%;
     }
 
     .flipcard{
